@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Dashboard</h1>
+      <div id="ip" style="margin-left: 28px">123.45.6.78</div>
+    </header>
+    <main>
+      <section class="lan">
+        <h2>LAN<i>.1</i></h2>
+        <ul class="lan__core">
+          <h3>Core</h3>
+          <a id="pihole" class="has-popup" href="https://pihole.example.net" target="_blank">
+            <img src="icons/pihole.png">pihole<i>.4</i>
+            <div class="popup">Loading...</div>
+          </a>
+          <a id="tinypilot" href="https://tinypilot.example.net" target="_blank"><img src="icons/tinypilot.png">tinypilot<i>.5</i></a>
+          <a id="pve" href="https://pve.example.net:8006" target="_blank"><img src="icons/proxmox.png">pve<i>.6</i></a>
+          <a id="pbs" href="https://pbs.example.net:8007" target="_blank"><img src="icons/proxmox.png">pbs<i>.7</i></a>
+          <a id="tailct" href="https://tailct.example.net:8088" target="_blank"><img src="icons/tailscale.svg" style="transform: scale(0.85)">tailct<i>.8</i></a>
+        </ul>
+        <ul class="lan__lanvm">
+          <h3 id="lanvm">lanvm<i>.10</i></h3>
+          <a id="traefik-lan" class="has-popup" href="https://traefik-lan.example.net" target="_blank">
+            <img src="icons/traefik.png">traefik
+            <div class="popup">Loading...</div>
+          </a>
+          <a href="https://gogs.example.net" target="_blank"><img src="icons/gogs.png">gogs</a>
+          <a href="https://gotify.example.net" target="_blank"><img src="icons/gotify.png">gotify</a>
+          <a href="https://health.example.net" target="_blank"><img src="icons/health.png">health</a>
+          <a href="https://healthchecks.example.net" target="_blank"><img src="icons/healthchecks.png">healthchecks</a>
+          <a href="https://jellyfin.example.net" target="_blank"><img src="icons/jellyfin.png">jellyfin</a>
+          <a id="outside" class="has-popup" href="https://outside.example.net" target="_blank">
+            <img src="icons/outside.png">outside
+            <div class="popup">Loading...</div>
+          </a>
+          <a href="https://paperless.example.net" target="_blank"><img src="icons/paperless.png">paperless</a>
+          <a href="https://photoprism.example.net" target="_blank"><img src="icons/photoprism.png">photoprism</a>
+          <a href="https://podgrab.example.net" target="_blank"><img src="icons/podgrab.png">podgrab</a>
+          <a href="https://portainer.example.net" target="_blank"><img src="icons/portainer.png">portainer</a>
+          <a href="https://syncthing.example.net" target="_blank"><img src="icons/syncthing.png">syncthing</a>
+          <a href="https://unifi.example.net" target="_blank"><img src="icons/unifi.png">unifi</a>
+          <a href="https://uptime.example.net" target="_blank"><img src="icons/uptime.png">uptime</a>
+        </ul>
+      </section>
+      <section class="not">
+        <h2>NoT<i>.2</i></h2>
+        <ul class="not__things">
+          <h3>Things</h3>
+          <a id="campi" href="https://campi.example.net" target="_blank"><img src="icons/campi.png">campi<i>.4</i></a>
+          <a id="robovac" href="https://robovac.example.net" target="_blank"><img src="icons/robovac.png">robovac<i>.5</i></a>
+          <a id="envoy" class="has-popup" href="https://envoy.example.net" target="_blank">
+            <img src="icons/enphase.png">envoy<i>.8</i>
+            <div class="popup">Loading...</div>
+          </a>
+          <a id="shelly" href="http://192.168.2.25" target="_blank"><img src="icons/shelly.png">shelly<i>.25</i></a>
+        </ul>
+        <ul class="not__notvm">
+          <h3 id="notvm">notvm<i>.10</i></h3>
+          <a href="https://traefik-not.example.net" target="_blank"><img src="icons/traefik.png">traefik</a>
+          <a href="https://frigate.example.net" target="_blank"><img src="icons/frigate.png">frigate</a>
+          <a href="https://hass.example.net" target="_blank"><img src="icons/hass.png">hass</a>
+        </ul>
+        <ul class="not__cameras">
+          <h3>Cameras</h3>
+          <a href="https://camera1.example.net" target="_blank"><img src="icons/hikvision.png">front door<i>.11</i></a>
+          <a href="https://camera2.example.net" target="_blank"><img src="icons/hikvision.png">garage<i>.12</i></a>
+          <a href="https://camera3.example.net" target="_blank"><img src="icons/hikvision.png">driveway<i>.13</i></a>
+          <a href="https://camera4.example.net" target="_blank"><img src="icons/hikvision.png">side path<i>.14</i></a>
+          <a href="https://camera5.example.net" target="_blank"><img src="icons/hikvision.png">back yard 1<i>.15</i></a>
+          <a href="https://camera6.example.net" target="_blank"><img src="icons/hikvision.png">back yard 2<i>.16</i></a>
+          <a href="https://camera7.example.net" target="_blank"><img src="icons/hikvision.png">unused<i>.17</i></a>
+        </ul>
+      </section>
+      <section class="misc">
+        <h2>Misc</h2>
+        <ul>
+          <h3 id="dmzvm">guest<i>.3</i></h3>
+          <a href="https://" target="_blank"><img src="icons/example.png">example</a>
+          <a href="https://" target="_blank"><img src="icons/example.png">example</a>
+        </ul>
+        <ul>
+          <h3 id="dmzvm">dmzvm<i>.4.10</i></h3>
+          <a href="https://baikal.example.net" target="_blank"><img src="icons/baikal.png">baikal</a>
+          <a href="https://hauk.example.net" target="_blank"><img src="icons/hauk.png">hauk</a>
+        </ul>
+        <ul>
+          <h3>REMOTE<i>.100</i></h3>
+          <a id="pihole-rem" class="has-popup" href="https://pihole-rem.example.net" target="_blank">
+            <img src="icons/pihole.png">pihole-rem<i>.4</i>
+            <div class="popup">Loading...</div>
+          </a>
+          <a id="pbs-rem" href="https://pbs-rem.example.net:8007" target="_blank"><img src="icons/proxmox.png">pbs-rem<i>.4</i></a>
+        </ul>
+        <ul>
+          <h3>VPS</h3>
+          <a id="example1" href="https://example.com" target="_blank"><img src="icons/example.png">site1</a>
+          <a id="example2" href="https://example.com" target="_blank"><img src="icons/example.png">site2</a>
+          <a id="example3" href="https://example.com" target="_blank"><img src="icons/example.png">site3</a>
+        </ul>
+      </section>
+    </main>
+    <aside>
+      <section class="alerts">
+        <ul id="alerts">
+          <h3>Real-time Alerts</h3>
+          <li><em>Loading...</em></li>
+        </ul>
+      </section>
+      <section class="gotify">
+        <ul id="gotify">
+          <h3>Notifications</h3>
+          <li><em>Loading...</em></li>
+        </ul>
+      </section>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
